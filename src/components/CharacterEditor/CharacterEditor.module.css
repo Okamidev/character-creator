@@ -4,10 +4,13 @@
 }
 
 .maxWidthWrapper {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +27,14 @@
 }
 
 .characterWrapper {
+  min-height: 500px;
+  position: fixed;
+  top: 20%;
+  /* allow to compute the container height, in order to be able to apply 100% height on the child and avoid footer overlap */
+  bottom: 150px;
+  left: 60%;
 }
 
 .controlColumn {
+  width: 50%;
 }
